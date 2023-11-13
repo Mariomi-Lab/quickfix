@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.0 FATAL_ERROR)
+add_definitions(-DHAVE_MYSQL)
 
 set (quickfix_PROJECT_NAME quickfix)
 
