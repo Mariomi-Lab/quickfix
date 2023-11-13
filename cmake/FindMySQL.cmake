@@ -34,8 +34,8 @@
 FIND_PATH(MYSQL_INCLUDE_DIR mysql.h
   /usr/include/mysql
   /usr/local/include/mysql
-  /opt/mysql/mysql/include
-  /opt/mysql/mysql/include/mysql
+  /usr/local/opt/mysql/include
+  /usr/local/opt/mysql/include/mysql
   /opt/mysql/include
   /opt/local/include/mysql5
   /usr/local/mysql/include
@@ -69,7 +69,8 @@ IF (WIN32)
 ELSE (WIN32)
   FIND_LIBRARY(MYSQL_LIB NAMES mysqlclient_r mysqlclient
     PATHS
-    /usr/lib/mysql
+          /usr/local/opt/mysql/lib
+          /usr/lib/mysql
     /usr/local/lib/mysql
     /usr/local/mysql/lib
     /usr/local/mysql/lib/mysql
